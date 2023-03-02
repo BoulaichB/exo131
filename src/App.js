@@ -19,7 +19,32 @@ function App() {
   let stocks = [stockCoca, stockFanta, stockSprite];
   let setStocks = [setStockCoca, setStockFanta, setStockSprite];
 
-  let [products, setProducts] = useState([{name: 'Coca Cola', unity: 0, price: 1, stock: stockCoca, setStock: setStockCoca}, {name: 'Fanta', unity: 0, price: 1.5, stock: stockFanta, setStock: setStockFanta}, {name: 'Sprite', unity: 0, price: 2, stock: stockSprite, setStock: setStockSprite}]);
+  let [products, setProducts] = useState([
+    {
+      name: 'Coca Cola', 
+      unity: 0, 
+      price: 1, 
+      stock: stockCoca, 
+      setStock: setStockCoca,
+      img: './img/coca.png'
+    }, 
+    {
+      name: 'Fanta', 
+      unity: 0, 
+      price: 1.5, 
+      stock: stockFanta, 
+      setStock: setStockFanta,
+      img: './img/fanta.jpg'
+    }, 
+    {
+      name: 'Sprite', 
+      unity: 0, 
+      price: 2, 
+      stock: stockSprite, 
+      setStock: setStockSprite,
+      img: './img/sprite.jpg'
+    }
+  ]);
 
 
   const router = createBrowserRouter(
